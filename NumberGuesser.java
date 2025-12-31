@@ -5,6 +5,7 @@ public class NumberGuesser {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         String playAgain;
+        boolean guessedCorrectly = false;
         System.out.println("─────────Number guesser─────────");
         System.out.print("Do you want to play a number guessing game(Y/N):");
         playAgain = scanner.next();
@@ -41,6 +42,7 @@ public class NumberGuesser {
                 guess = scanner.nextInt();
                 attemptCount++;
                 if (guess == randomNumber) {
+                    guessedCorrectly = true;
                     System.out.println("🎉 Correct! You guessed it in " + attemptCount + " attempt" + (attemptCount > 1 ? "s" : "") + ".");
                     break;
                 } else if (guess < randomNumber) {
@@ -59,3 +61,4 @@ public class NumberGuesser {
         System.out.print("Thanks for playing!\n GoodBye! Vasav😘");
     }
 }
+
