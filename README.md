@@ -1,8 +1,9 @@
+#  Number Guesser (Java)
 A simple command-line number guessing game written in Java.
 The player chooses a range, and the program generates a random number.
 The number of attempts is calculated fairly based on the chosen range.
 
-## ✨ Features
+##  Features
 
 - User-defined number range
 - Fair attempt calculation using logarithmic logic
